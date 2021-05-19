@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadrastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>Vamos realizar seu cadrastro,precisamos de apenas algumas informações</ion-item>
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Nome</ion-label>
+    <ion-input type="text"[(ngModel)]="Nome" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input type="email"[(ngModel)]="Email" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Contato</ion-label>
+    <ion-input type="tel"[(ngModel)]="Contato" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Cidade</ion-label>
+    <ion-input type="text"[(ngModel)]="Cidade" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">cpf</ion-label>
+    <ion-input type="number"[(ngModel)]="cpf" ></ion-input>
+  </ion-item>
+
+  <ion-button *ngIf="!id"  color="success" expand="block" (click)="cadastrar()">
+    Adicionar
+  </ion-button>
+  <ion-button  *ngIf="id"  color="primary" expand="block" (click)="editar()">
+    Atualizar
+  </ion-button>
+  
+</ion-content>
