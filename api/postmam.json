@@ -1,0 +1,17 @@
+{
+    "requisicao": "login",
+    "usuario": "daniel",
+    "senha": "456321"
+}
+
+{
+    "requisicao": "add",
+    "nome": "Daniel Silva Pereira",
+    "usuario": "daniel",
+    "senha": "456321",
+    "nivel": "admin"
+}
+{
+    "requisicao": "delete",
+    "id": "10"
+}

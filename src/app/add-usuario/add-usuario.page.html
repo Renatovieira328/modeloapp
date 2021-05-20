@@ -11,30 +11,30 @@
 <ion-content>
   <ion-item>
     <ion-label position="stacked">Nome</ion-label>
-    <ion-input type="text"[(ngModel)]="Nome" ></ion-input>
+    <ion-input type="text" [(ngModel)]="Nome"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Email</ion-label>
-    <ion-input type="email"[(ngModel)]="Email" ></ion-input>
+    <ion-input type="email" [(ngModel)]="Email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Contato</ion-label>
-    <ion-input type="tel"[(ngModel)]="Contato" ></ion-input>
+    <ion-input type="tel" [(ngModel)]="telefone"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Cidade</ion-label>
-    <ion-input type="text"[(ngModel)]="Cidade" ></ion-input>
+    <ion-input type="text" [(ngModel)]="Cidade"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">cpf</ion-label>
-    <ion-input type="number"[(ngModel)]="cpf" ></ion-input>
+    <ion-input type="number" [(ngModel)]="cpf"></ion-input>
   </ion-item>
 
-  <ion-button *ngIf="!id"  color="success" expand="block" (click)="cadastrar()">
+  <ion-button *ngIf="!id" color="success" expand="block" (click)="cadastrar()">
     Adicionar
   </ion-button>
-  <ion-button  *ngIf="id"  color="primary" expand="block" (click)="editar()">
+  <ion-button *ngIf="id" color="primary" expand="block" (click)="editar()">
     Atualizar
   </ion-button>
-  
+
 </ion-content>
